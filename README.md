@@ -1,6 +1,6 @@
 <h1 align="center">LaCobble</h1>
 
-<h3 align="center">French Cybersecurity StudentPas de problème, avec plaisir !</h3> 
+<h3 align="center">French Cybersecurity Student</h3> 
 
 <p align="center">Developer 💻, CTF Player 🔒, ENSIBS Student 👨‍🎓, Coca Addict </p>
 
