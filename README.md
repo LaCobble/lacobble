@@ -27,7 +27,7 @@
 ## CyberSecurity
 <p align="center">
 	<a href="https://github.com/LaCobble/Styx">
-		<img width="450em" src="https://github-readme-stats.vercel.app/api/pin/?username=LaCobble&repo=Trendr_App&hide_border=true&theme=dark">
+		<img width="450em" src="https://github-readme-stats.vercel.app/api/pin/?username=LaCobble&repo=Styx&hide_border=true&theme=dark">
 	</a>
 </p>
 
