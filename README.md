@@ -43,14 +43,6 @@
 	</a>
 </p>
 
-# Contributions
-<h4 align="center">Isometric view of contributions in the last year. Languages pie is based on recent commits</h4>
-<p align="center">
-	<a href="./profile-3d-contrib/profile-night-green.svg">
-		<img width="900em" src="./profile-3d-contrib/profile-night-green.svg">
-	</a>
-</p>
-
 # Projects
 
 ## CyberSecurity
@@ -109,15 +101,5 @@
 <p align="center">
 	<img width="450em" src="https://api.githubtrends.io/user/svg/LaCobble/langs?time_range=one_year&include_private=True&loc_metric=changed&theme=dark">
 </p>
-
-<h4 align="center">Views of all repositories (updated daily)</h4>
-<p align="center">
-	<a href="https://github.com/LaCobble/my_github_profile_views_counter">
-		<img width="135em" src="https://github.com/LaCobble/my_github_profile_views_counter/blob/master/svg/profile/badge.svg">
-	</a>
-</p>
       
-<p align="left"> <a href="https://twitter.com/" target="blank"><img
-      src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
-  
 </div>
