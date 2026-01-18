@@ -2,7 +2,7 @@
 
 <h3 align="center">French Cybersecurity Student</h3> 
 
-<p align="center">Developer 👩‍💻, ENSIBS Student 👨‍🎓, CTF Player 🔒 </p>
+<p align="center">Developer 👩‍💻, Student 👨‍🎓, CTF Player 🔒 </p>
 
 <h4 align="center">
 	Head <a href="https://github.com/LaCobble">over here</a> to engage, share, ask questions and collaborate together!
