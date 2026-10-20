@@ -10,8 +10,9 @@ possible.
 Wi-Fi and Bluetooth network scanner, on-device, no backend: what's around
 you, and what it exposes.
 
-**forty-odd iOS apps** &nbsp;·&nbsp; <samp>swift, swiftui</samp> &nbsp;·&nbsp; <samp>in progress</samp><br>
-Small, focused native apps: games, journals, trackers, everyday tools.
+**[iOS apps](APPS.md)** &nbsp;·&nbsp; <samp>swift, swiftui</samp> &nbsp;·&nbsp; <samp>in progress</samp><br>
+Three dozen small, focused native apps: games, journals, trackers,
+everyday tools. [See the catalogue →](APPS.md)
 
 **[styx](https://github.com/LaCobble/Styx)** &nbsp;·&nbsp; <samp>python</samp><br>
 File and folder encryption, AES-CBC with a PBKDF2-derived key.

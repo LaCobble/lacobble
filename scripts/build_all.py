@@ -9,12 +9,14 @@ import os
 import sys
 
 from fetch_github import fetch, summarize
+from render_apps import load as load_apps, render as render_apps
 from render_hero import render as render_hero
 from render_langs import render as render_langs
 from render_heading import render as render_heading
 from lib.svg_utils import write_svg
 
 ASSETS = os.path.join(os.path.dirname(__file__), "..", "assets")
+APPS = os.path.join(os.path.dirname(__file__), "..", "apps.toml")
 
 HEADINGS = {
     "hd-projects.svg": "projects",
@@ -36,6 +38,7 @@ def main():
     print("rendering data widgets...")
     write_svg(os.path.join(ASSETS, "hero.svg"), render_hero())
     write_svg(os.path.join(ASSETS, "langs.svg"), render_langs(data))
+    write_svg(os.path.join(ASSETS, "apps.svg"), render_apps(load_apps(APPS)))
 
     print("rendering section headings...")
     for filename, label in HEADINGS.items():
