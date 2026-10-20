@@ -2,9 +2,6 @@
 
 <img src="./assets/streak.svg" width="620" alt="Contributions, jours actifs et séries sur les 12 derniers mois"/>
 
-[youtube](https://www.youtube.com/@LaCobble) &nbsp;·&nbsp;
-[github](https://github.com/LaCobble)
-
 </div>
 
 <img src="./assets/hd-about.svg" width="620" alt="à propos"/>
@@ -12,11 +9,8 @@
 > Consultant sécurité le jour, bricoleur d'outils la nuit.<br>
 > Petits outils précis plutôt que grandes plateformes vagues.
 
-Je fais tourner **[La_Cobble](https://www.youtube.com/@LaCobble)**, une chaîne
-cybersécu en français avec une identité "tanière" — anatomie d'arnaques,
-sécurisation du quotidien numérique, et des défis OSINT ("La Tanière
-enquête"). Entre deux vidéos, je construis des apps iOS natives pour mon
-propre usage avant de les publier — et ce README lui-même.
+Je construis des apps iOS natives, d'abord pour mon propre usage, avant
+de les publier.
 
 <img src="./assets/hd-stack.svg" width="620" alt="stack"/>
 
@@ -31,10 +25,6 @@ outils du quotidien. Pas de tracking, le moins de backend possible.
 **scout** &nbsp;·&nbsp; <samp>swift</samp> &nbsp;·&nbsp; <samp>bientôt public</samp><br>
 Scan réseau Wi-Fi et Bluetooth, en local, sans backend : ce qui est autour
 de toi, et ce que ça expose.
-
-**[la_cobble](https://www.youtube.com/@LaCobble)** &nbsp;·&nbsp; <samp>chaîne youtube</samp><br>
-Cybersécurité expliquée sans jargon inutile. Anatomie d'une arnaque, IA &
-sécurité, sécurise ta vie numérique.
 
 **ce README** &nbsp;·&nbsp; <samp>python, github actions</samp><br>
 Généré une fois par jour depuis l'API GraphQL de GitHub — voir plus bas.
