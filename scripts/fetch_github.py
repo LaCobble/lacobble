@@ -1,5 +1,5 @@
 """
-Pulls the raw numbers the widgets need, once a day, via the GitHub
+Pulls the language numbers langs.svg needs, once a day, via the GitHub
 GraphQL API. Needs a token in the GH_TOKEN env var (the workflow passes
 in the GH_PAT secret - see .github/workflows/stats.yml). The token needs
 the `repo` scope so private repos count toward the language totals; only
@@ -11,22 +11,14 @@ Run standalone for debugging:
 import json
 import os
 import sys
-from datetime import date, timedelta
 
 import requests
 
 API_URL = "https://api.github.com/graphql"
 
 QUERY = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
+query($login: String!) {
   user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
-      contributionCalendar {
-        weeks {
-          contributionDays { date contributionCount }
-        }
-      }
-    }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
       nodes {
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
@@ -44,16 +36,9 @@ def fetch(login: str) -> dict:
     if not token:
         raise SystemExit("GH_TOKEN env var is required")
 
-    to = date.today()
-    frm = to - timedelta(days=365)
-    variables = {
-        "login": login,
-        "from": f"{frm.isoformat()}T00:00:00Z",
-        "to": f"{to.isoformat()}T23:59:59Z",
-    }
     resp = requests.post(
         API_URL,
-        json={"query": QUERY, "variables": variables},
+        json={"query": QUERY, "variables": {"login": login}},
         headers={"Authorization": f"bearer {token}"},
         timeout=30,
     )
@@ -66,29 +51,6 @@ def fetch(login: str) -> dict:
 
 def summarize(raw: dict) -> dict:
     """Reduce the raw GraphQL payload to exactly what the renderers need."""
-    days = []
-    for week in raw["contributionsCollection"]["contributionCalendar"]["weeks"]:
-        for d in week["contributionDays"]:
-            days.append({"date": d["date"], "count": d["contributionCount"]})
-
-    # streaks
-    current = longest = running = 0
-    for d in days:
-        if d["count"] > 0:
-            running += 1
-            longest = max(longest, running)
-        else:
-            running = 0
-    # current streak = trailing run ending on the last day with data.
-    # The workflow runs at 04:15 UTC, when today is still empty - an empty
-    # today doesn't break the streak, it just isn't over yet.
-    trailing = days[:-1] if days and days[-1]["count"] == 0 else days
-    for d in reversed(trailing):
-        if d["count"] > 0:
-            current += 1
-        else:
-            break
-
     # languages, as each repo's share of its own code averaged over every
     # repo. Summing raw bytes lets one repo with a committed virtualenv or
     # vendored SDK outweigh dozens of real projects.
@@ -116,11 +78,6 @@ def summarize(raw: dict) -> dict:
     )[:6]
 
     return {
-        "days": days,
-        "current_streak": current,
-        "longest_streak": longest,
-        "total_contributions": sum(d["count"] for d in days),
-        "active_days": sum(1 for d in days if d["count"] > 0),
         "languages": languages,
         "repo_count": counted,
     }

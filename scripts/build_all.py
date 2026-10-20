@@ -9,27 +9,23 @@ import os
 import sys
 
 from fetch_github import fetch, summarize
-from render_streak import render as render_streak
+from render_hero import render as render_hero
 from render_langs import render as render_langs
-from render_year import render as render_year
 from render_heading import render as render_heading
 from lib.svg_utils import write_svg
 
 ASSETS = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 HEADINGS = {
-    "hd-about.svg": "à propos",
+    "hd-projects.svg": "projects",
     "hd-stack.svg": "stack",
-    "hd-projects.svg": "projets",
-    "hd-stats.svg": "stats",
-    "hd-about-this-page.svg": "cette page",
 }
 
 
 def main():
     login = sys.argv[1] if len(sys.argv) > 1 else "LaCobble"
 
-    print(f"fetching contribution + language data for {login}...")
+    print(f"fetching language data for {login}...")
     raw = fetch(login)
     data = summarize(raw)
 
@@ -38,9 +34,8 @@ def main():
         json.dump(data, f, indent=2)
 
     print("rendering data widgets...")
-    write_svg(os.path.join(ASSETS, "streak.svg"), render_streak(data))
+    write_svg(os.path.join(ASSETS, "hero.svg"), render_hero())
     write_svg(os.path.join(ASSETS, "langs.svg"), render_langs(data))
-    write_svg(os.path.join(ASSETS, "year.svg"), render_year(data))
 
     print("rendering section headings...")
     for filename, label in HEADINGS.items():

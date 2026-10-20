@@ -63,7 +63,7 @@ def svg_close() -> str:
 
 
 def card_bg(width: int, height: int, pad: int = 1) -> str:
-    """Inner panel used by data-widgets (streak, langs, year)."""
+    """Inner panel shared by every card (hero, headings, langs)."""
     return (
         f'<rect x="{pad}" y="{pad}" width="{width - 2*pad}" '
         f'height="{height - 2*pad}" rx="9" fill="{BG_CARD}" '

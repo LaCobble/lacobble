@@ -16,11 +16,11 @@ PAD_BOTTOM = 18
 
 
 def render(data: dict) -> str:
-    langs = data["languages"] or [{"name": "pas encore de code", "share": 0,
+    langs = data["languages"] or [{"name": "no code yet", "share": 0,
                                     "repos": 0}]
     height = PAD_TOP + ROW_H * len(langs) + PAD_BOTTOM + 14
 
-    out = svg_open(CARD_WIDTH, height, "Langages les plus utilisés, en part moyenne par dépôt")
+    out = svg_open(CARD_WIDTH, height, "Most used languages, averaged per repository")
     out += card_bg(CARD_WIDTH, height)
 
     label_w = 150
@@ -51,8 +51,8 @@ def render(data: dict) -> str:
         )
     out += (
         f'<text x="24" y="{height - 16}" font-size="9" fill="{TEXT_MUTED}" '
-        f'opacity="0.7">part moyenne du code de chaque dépôt · '
-        f'{data.get("repo_count", 0)} dépôts, publics et privés</text>\n'
+        f'opacity="0.7">average share of each repository\'s code · '
+        f'{data.get("repo_count", 0)} repositories, public and private</text>\n'
     )
     out += svg_close()
     return out

@@ -1,59 +1,23 @@
-<div align="center">
+<img src="./assets/hero.svg" width="620" alt="LaCobble, cybersecurity engineer"/>
 
-<img src="./assets/streak.svg" width="620" alt="Contributions, jours actifs et séries sur les 12 derniers mois"/>
+I also build native iOS apps (Swift, SwiftUI), designed for privacy from
+the start: on-device processing, no tracking, as little backend as
+possible.
 
-</div>
+<img src="./assets/hd-projects.svg" width="620" alt="projects"/>
 
-<img src="./assets/hd-about.svg" width="620" alt="à propos"/>
+**scout** &nbsp;·&nbsp; <samp>swift</samp> &nbsp;·&nbsp; <samp>coming soon</samp><br>
+Wi-Fi and Bluetooth network scanner, on-device, no backend: what's around
+you, and what it exposes.
 
-**Ingénieur en cybersécurité.** Je développe aussi des apps iOS natives
-(Swift, SwiftUI), conçues dès le départ pour protéger la vie privée :
-traitement en local, pas de tracking, le moins de backend possible.
+**forty-odd iOS apps** &nbsp;·&nbsp; <samp>swift, swiftui</samp> &nbsp;·&nbsp; <samp>in progress</samp><br>
+Small, focused native apps: games, journals, trackers, everyday tools.
+
+**[styx](https://github.com/LaCobble/Styx)** &nbsp;·&nbsp; <samp>python</samp><br>
+File and folder encryption, AES-CBC with a PBKDF2-derived key.
 
 <img src="./assets/hd-stack.svg" width="620" alt="stack"/>
 
-<samp>swift &nbsp; swiftui &nbsp; swiftdata &nbsp; python &nbsp; fastapi &nbsp; typescript &nbsp; cloudflare workers &nbsp; supabase &nbsp; docker &nbsp; linux</samp>
+<img src="./assets/langs.svg" width="620" alt="Most used languages, averaged per repository"/>
 
-<img src="./assets/hd-projects.svg" width="620" alt="projets"/>
-
-**une quarantaine d'apps iOS** &nbsp;·&nbsp; <samp>swift, swiftui</samp> &nbsp;·&nbsp; <samp>en cours</samp><br>
-Des apps natives, petites et ciblées : jeux, carnets, suivi, outils du
-quotidien.
-
-**scout** &nbsp;·&nbsp; <samp>swift</samp> &nbsp;·&nbsp; <samp>bientôt public</samp><br>
-Scan réseau Wi-Fi et Bluetooth, en local, sans backend : ce qui est autour
-de toi, et ce que ça expose.
-
-**ce README** &nbsp;·&nbsp; <samp>python, github actions</samp><br>
-Généré une fois par jour depuis l'API GraphQL de GitHub — voir plus bas.
-
-<img src="./assets/hd-stats.svg" width="620" alt="stats"/>
-
-<div align="center">
-<img src="./assets/langs.svg" width="620" alt="Langages les plus utilisés, en part moyenne par dépôt"/>
-<img src="./assets/year.svg" width="620" alt="L'année écoulée, un caractère par jour"/>
-</div>
-
-<img src="./assets/hd-about-this-page.svg" width="620" alt="cette page"/>
-
-Chaque graphique de cette page est généré, pas embarqué depuis le serveur de
-quelqu'un d'autre. Les widgets de données ([`scripts/fetch_github.py`](scripts/fetch_github.py) +
-[`scripts/render_*.py`](scripts)) et les titres de section sont dessinés
-par [une Action programmée](.github/workflows/stats.yml), une fois par jour,
-directement depuis l'API GraphQL de GitHub — elle ne commit que ce qui a
-changé.
-
-Le curseur des titres clignote en SMIL, dans le SVG lui-même, parce que
-GitHub retire les scripts des README — et comme rien ne charge depuis un
-serveur tiers, rien ici ne peut être rate-limité ou tomber. Les titres de
-section sont aussi des images pour la même raison : GitHub retire aussi le
-CSS, donc une image reste le seul moyen d'y mettre une typo qui ne soit pas
-celle de GitHub.
-
-La typo est [JetBrains Mono](fonts/README.md) (licence libre SIL OFL),
-réduite aux caractères latins et intégrée en base64 dans chaque image.
-
-Les langages comptent tous mes dépôts, publics et privés, chacun avec le
-même poids : un dépôt qui embarque ses dépendances ne fausse pas tout le
-reste. `year.svg` va du jour vide au plus intense sur une échelle de cinq
-caractères : `·` `:` `+` `#` `@`.
+<samp>swift &nbsp; swiftui &nbsp; python &nbsp; fastapi &nbsp; typescript &nbsp; cloudflare workers &nbsp; docker &nbsp; linux</samp>

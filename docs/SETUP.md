@@ -16,12 +16,11 @@ gh pr create --base main
 
 ## 3. Créer le token pour les stats
 Le `GITHUB_TOKEN` fourni automatiquement par les Actions ne voit que ce
-dépôt : il ne peut ni lire `contributionsCollection` ni lister tes dépôts
-privés.
+dépôt : il ne peut pas lister tes dépôts privés pour les totaux de
+langages.
 
 1. https://github.com/settings/tokens → **Generate new token (classic)**
-2. Scopes : `read:user` et `repo`. `repo` sert à compter les langages des
-   dépôts privés ; seuls des totaux par langage sortent de l'API, jamais
+2. Scope : `repo`, pour compter les langages des dépôts privés. Seuls des totaux par langage sortent de l'API, jamais
    le nom d'un dépôt privé. Mets une expiration et note-la : quand le
    token expire, l'Action échoue et les graphiques ne bougent plus.
 3. Copie le token

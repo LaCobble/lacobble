@@ -28,12 +28,6 @@ FONT_STACK = (
 # Standard card width shared by every widget so the profile grid lines up.
 CARD_WIDTH = 620
 
-# Character ramp used by year.svg - an empty day, then quiet to loud,
-# four steps to match a real contribution graph. Each step has its own
-# color so the grid reads at a glance, not only up close.
-CHAR_RAMP = ["·", ":", "+", "#", "@"]
-RAMP_COLORS = ["#4A4136", "#7D6A55", "#A9784A", "#C98143", EMBER]
-
 # Bar colors for langs.svg, ember fading into moss - the brand palette
 # rather than GitHub's per-language rainbow.
 LANG_COLORS = [EMBER, "#C9915C", "#A8977A", MOSS, "#5F7358", "#4F4840"]

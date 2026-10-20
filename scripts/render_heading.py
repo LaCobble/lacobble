@@ -18,7 +18,7 @@ HEIGHT = 46
 
 def render(label: str) -> str:
     label_up = label.upper()
-    out = svg_open(CARD_WIDTH, HEIGHT, f"section : {label}")
+    out = svg_open(CARD_WIDTH, HEIGHT, f"section: {label}")
     out += card_bg(CARD_WIDTH, HEIGHT)
     # ember corner bracket - the recurring signature element, echoed
     # in every heading so the eye learns to spot a new section starting
