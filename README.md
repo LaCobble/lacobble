@@ -6,11 +6,9 @@
 
 <img src="./assets/hd-about.svg" width="620" alt="à propos"/>
 
-> Consultant sécurité le jour, bricoleur d'outils la nuit.<br>
-> Petits outils précis plutôt que grandes plateformes vagues.
-
-Je construis des apps iOS natives, d'abord pour mon propre usage, avant
-de les publier.
+**Ingénieur en cybersécurité.** Je développe aussi des apps iOS natives
+(Swift, SwiftUI), conçues dès le départ pour protéger la vie privée :
+traitement en local, pas de tracking, le moins de backend possible.
 
 <img src="./assets/hd-stack.svg" width="620" alt="stack"/>
 
@@ -19,8 +17,8 @@ de les publier.
 <img src="./assets/hd-projects.svg" width="620" alt="projets"/>
 
 **une quarantaine d'apps iOS** &nbsp;·&nbsp; <samp>swift, swiftui</samp> &nbsp;·&nbsp; <samp>en cours</samp><br>
-Des apps natives, petites et ciblées : jeux quotidiens, carnets, suivi,
-outils du quotidien. Pas de tracking, le moins de backend possible.
+Des apps natives, petites et ciblées : jeux, carnets, suivi, outils du
+quotidien.
 
 **scout** &nbsp;·&nbsp; <samp>swift</samp> &nbsp;·&nbsp; <samp>bientôt public</samp><br>
 Scan réseau Wi-Fi et Bluetooth, en local, sans backend : ce qui est autour
