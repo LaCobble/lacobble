@@ -1,81 +1,71 @@
-<h1 align="center">LaCobble</h1>
+<div align="center">
 
-<h3 align="center">French Cybersecurity Student</h3> 
+<img src="./assets/streak.svg" width="620" alt="Contributions, jours actifs et séries sur les 12 derniers mois"/>
 
-<p align="center">Developer 👩‍💻, Student 👨‍🎓, CTF Player 🔒 </p>
+[youtube](https://www.youtube.com/@LaCobble) &nbsp;·&nbsp;
+[github](https://github.com/LaCobble)
 
-<h4 align="center">
-	Head <a href="https://github.com/LaCobble">over here</a> to engage, share, ask questions and collaborate together!
-</h4>
-<hr>
-
-<p align="center">
-	<img width="450em" src="https://github-readme-stats.vercel.app/api?username=LaCobble&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=dark" />
-</p>
-
-<p align="center">
-	<img width="450em" src="https://github-readme-streak-stats.herokuapp.com/?user=LaCobble&include_all_commits=true&hide_border=true&theme=dark"/>
-</p>
-
-
-<p align="center">
-	<img width="450em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LaCobble&layout=compact&custom_title=Most%20used%20languages&langs_count=10&include_all_commits=true&hide_progress=false&hide_border=true&theme=dark&hide=">
-</p>
-	
-# Projects
-
-## CyberSecurity
-<p align="center">
-	<a href="https://github.com/LaCobble/Styx">
-		<img width="450em" src="https://github-readme-stats.vercel.app/api/pin/?username=LaCobble&repo=Styx&hide_border=true&theme=dark">
-	</a>
-</p>
-
-# Technologies
-
-### CI/CD
-![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/gitlab%20ci-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
-
-### Databases
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-
-### Frameworks, Platforms and Libraries
-![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-
-### Programming & Markdown, Styling Languages
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-
-### Testing
-![Chai](https://img.shields.io/badge/Chai-A30701?style=for-the-badge&logo=chai&logoColor=white)
-![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
-![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-
-      
 </div>
+
+<img src="./assets/hd-about.svg" width="620" alt="à propos"/>
+
+> Consultant sécurité le jour, bricoleur d'outils la nuit.<br>
+> Petits outils précis plutôt que grandes plateformes vagues.
+
+Je fais tourner **[La_Cobble](https://www.youtube.com/@LaCobble)**, une chaîne
+cybersécu en français avec une identité "tanière" — anatomie d'arnaques,
+sécurisation du quotidien numérique, et des défis OSINT ("La Tanière
+enquête"). Entre deux vidéos, je construis des apps iOS natives pour mon
+propre usage avant de les publier — et ce README lui-même.
+
+<img src="./assets/hd-stack.svg" width="620" alt="stack"/>
+
+<samp>swift &nbsp; swiftui &nbsp; swiftdata &nbsp; python &nbsp; fastapi &nbsp; typescript &nbsp; cloudflare workers &nbsp; supabase &nbsp; docker &nbsp; linux</samp>
+
+<img src="./assets/hd-projects.svg" width="620" alt="projets"/>
+
+**une quarantaine d'apps iOS** &nbsp;·&nbsp; <samp>swift, swiftui</samp> &nbsp;·&nbsp; <samp>en cours</samp><br>
+Des apps natives, petites et ciblées : jeux quotidiens, carnets, suivi,
+outils du quotidien. Pas de tracking, le moins de backend possible.
+
+**scout** &nbsp;·&nbsp; <samp>swift</samp> &nbsp;·&nbsp; <samp>bientôt public</samp><br>
+Scan réseau Wi-Fi et Bluetooth, en local, sans backend : ce qui est autour
+de toi, et ce que ça expose.
+
+**[la_cobble](https://www.youtube.com/@LaCobble)** &nbsp;·&nbsp; <samp>chaîne youtube</samp><br>
+Cybersécurité expliquée sans jargon inutile. Anatomie d'une arnaque, IA &
+sécurité, sécurise ta vie numérique.
+
+**ce README** &nbsp;·&nbsp; <samp>python, github actions</samp><br>
+Généré une fois par jour depuis l'API GraphQL de GitHub — voir plus bas.
+
+<img src="./assets/hd-stats.svg" width="620" alt="stats"/>
+
+<div align="center">
+<img src="./assets/langs.svg" width="620" alt="Langages les plus utilisés, en part moyenne par dépôt"/>
+<img src="./assets/year.svg" width="620" alt="L'année écoulée, un caractère par jour"/>
+</div>
+
+<img src="./assets/hd-about-this-page.svg" width="620" alt="cette page"/>
+
+Chaque graphique de cette page est généré, pas embarqué depuis le serveur de
+quelqu'un d'autre. Les widgets de données ([`scripts/fetch_github.py`](scripts/fetch_github.py) +
+[`scripts/render_*.py`](scripts)) et les titres de section sont dessinés
+par [une Action programmée](.github/workflows/stats.yml), une fois par jour,
+directement depuis l'API GraphQL de GitHub — elle ne commit que ce qui a
+changé.
+
+Le curseur des titres clignote en SMIL, dans le SVG lui-même, parce que
+GitHub retire les scripts des README — et comme rien ne charge depuis un
+serveur tiers, rien ici ne peut être rate-limité ou tomber. Les titres de
+section sont aussi des images pour la même raison : GitHub retire aussi le
+CSS, donc une image reste le seul moyen d'y mettre une typo qui ne soit pas
+celle de GitHub.
+
+La typo est [JetBrains Mono](fonts/README.md) (licence libre SIL OFL),
+réduite aux caractères latins et intégrée en base64 dans chaque image.
+
+Les langages comptent tous mes dépôts, publics et privés, chacun avec le
+même poids : un dépôt qui embarque ses dépendances ne fausse pas tout le
+reste. `year.svg` va du jour vide au plus intense sur une échelle de cinq
+caractères : `·` `:` `+` `#` `@`.
