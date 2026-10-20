@@ -15,7 +15,7 @@ Three dozen small, focused native apps: games, journals, trackers,
 everyday tools. [See the catalogue →](APPS.md)
 
 **[styx](https://github.com/LaCobble/Styx)** &nbsp;·&nbsp; <samp>python</samp><br>
-File and folder encryption, AES-CBC with a PBKDF2-derived key.
+File and folder encryption: AES-256-GCM, Argon2id, streamed and tamper-evident.
 
 <img src="./assets/hd-stack.svg" width="620" alt="stack"/>
 
