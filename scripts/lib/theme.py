@@ -7,9 +7,12 @@ terminal/data feel, used sparingly so nothing competes with the ember.
 """
 
 # --- Color tokens -----------------------------------------------------
-BG = "#12100D"          # near-black warm brown - the den
-BG_CARD = "#1B1712"     # slightly lifted panel background
-LINE = "#2E2820"        # hairline borders / grid dividers
+# Backgrounds match GitHub's dark theme canvas so the cards sit on the
+# page instead of floating on it as brown boxes; the warmth comes from
+# the text and accents.
+BG = "#0D1117"          # GitHub dark canvas
+BG_CARD = "#0D1117"     # same as BG: panels are outlined, not lifted
+LINE = "#30363D"        # GitHub dark border - hairlines / grid dividers
 TEXT = "#EDE6DA"        # warm off-white, primary text
 TEXT_MUTED = "#9C9284"  # secondary text, captions
 EMBER = "#E3873E"       # campfire orange - the one loud accent
@@ -35,5 +38,5 @@ LANG_COLORS = [EMBER, "#C9915C", "#A8977A", MOSS, "#5F7358", "#4F4840"]
 # ASCII portrait in the hero banner: brightness picks a character on the
 # ramp and a color, dark to light, so the avatar renders in the palette.
 PORTRAIT_RAMP = " .:-=+*#%@"
-PORTRAIT_COLORS = ["#1B1712", "#3A332A", "#4F4840", "#6B5E4D", "#8A7356",
+PORTRAIT_COLORS = [BG, "#3A332A", "#4F4840", "#6B5E4D", "#8A7356",
                    "#A9784A", "#C98143", EMBER, "#E9B98A", TEXT]
