@@ -1,0 +1,49 @@
+name: update-profile-graphics
+
+on:
+  schedule:
+    # 04:15 UTC daily
+    - cron: "15 4 * * *"
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "fonts/**"
+      - "apps.toml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: build graphics
+        env:
+          # GITHUB_TOKEN (auto-provided) only sees this repo, so it can't
+          # list private repos for the language totals - that needs a
+          # personal token. Create one at github.com/settings/tokens
+          # (classic, repo scope) and save it as a repo secret named
+          # GH_PAT. See docs/SETUP.md.
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        working-directory: scripts
+        run: python build_all.py LaCobble
+
+      - name: commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git diff --staged --quiet && echo "nothing changed" && exit 0
+          git commit -m "chore: refresh profile graphics"
+          git push

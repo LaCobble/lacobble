@@ -1,0 +1,186 @@
+# The iOS app catalogue rendered into assets/apps.svg (see
+# scripts/render_apps.py). Curated by hand on purpose: a list generated
+# from the GitHub API would publish every new private repo automatically.
+#
+# Keep each line vague and under ~28 characters so it fits its tile.
+# Categories render in the order they first appear.
+
+[[app]]
+name = "Scout"
+category = "Security & privacy"
+line = "Network awareness"
+
+[[app]]
+name = "Vigil"
+category = "Security & privacy"
+line = "Privacy insights"
+
+[[app]]
+name = "Flecho"
+category = "Daily puzzles"
+line = "Daily word puzzle"
+
+[[app]]
+name = "Lexmo"
+category = "Daily puzzles"
+line = "Daily word game"
+
+[[app]]
+name = "Zomu"
+category = "Daily puzzles"
+line = "Daily guessing game"
+
+[[app]]
+name = "Table de Midi"
+category = "Daily puzzles"
+line = "Daily trivia"
+
+[[app]]
+name = "Arpent"
+category = "Games"
+line = "Walking game"
+
+[[app]]
+name = "BlockFortress"
+category = "Games"
+line = "Strategy game"
+
+[[app]]
+name = "CyberDefense"
+category = "Games"
+line = "Security-themed strategy"
+
+[[app]]
+name = "Héros de Comptoir"
+category = "Party & tabletop"
+line = "Party game"
+
+[[app]]
+name = "Complot au Comptoir"
+category = "Party & tabletop"
+line = "Social deduction"
+
+[[app]]
+name = "Tchin!"
+category = "Party & tabletop"
+line = "Party night companion"
+
+[[app]]
+name = "Plouf!"
+category = "Party & tabletop"
+line = "Party game companion"
+
+[[app]]
+name = "Piochons"
+category = "Party & tabletop"
+line = "Board game library"
+
+[[app]]
+name = "Sac à Malices"
+category = "Party & tabletop"
+line = "Tabletop toolkit"
+
+[[app]]
+name = "Chronique de Table"
+category = "Party & tabletop"
+line = "Tabletop RPG companion"
+
+[[app]]
+name = "Signet"
+category = "Journals & collections"
+line = "Reading journal"
+
+[[app]]
+name = "Lisière"
+category = "Journals & collections"
+line = "Nature journal"
+
+[[app]]
+name = "Faro"
+category = "Journals & collections"
+line = "Wine cellar"
+
+[[app]]
+name = "Log Pose TCG"
+category = "Journals & collections"
+line = "Card collection"
+
+[[app]]
+name = "Spool"
+category = "Journals & collections"
+line = "Watchlist"
+
+[[app]]
+name = "Klip"
+category = "Journals & collections"
+line = "Saved links"
+
+[[app]]
+name = "Kodiak"
+category = "Health & fitness"
+line = "Training log"
+
+[[app]]
+name = "Pilulier"
+category = "Health & fitness"
+line = "Medication reminders"
+
+[[app]]
+name = "Kler"
+category = "Health & fitness"
+line = "Food scanner"
+
+[[app]]
+name = "Cyclio"
+category = "Everyday tools"
+line = "Recurring reminders"
+
+[[app]]
+name = "Pont Malin"
+category = "Everyday tools"
+line = "Time-off planner"
+
+[[app]]
+name = "Révisio"
+category = "Everyday tools"
+line = "Vehicle logbook"
+
+[[app]]
+name = "Merguez"
+category = "Everyday tools"
+line = "Cooking timers"
+
+[[app]]
+name = "Brin"
+category = "Everyday tools"
+line = "Thoughtful gestures"
+
+[[app]]
+name = "Là-haut"
+category = "Everyday tools"
+line = "Night sky rating"
+
+[[app]]
+name = "Phammad"
+category = "Everyday tools"
+line = "Helpdesk client"
+
+[[app]]
+name = "Bien Arrivé"
+category = "Travel & outdoors"
+line = "Flight tracking"
+
+[[app]]
+name = "Japam"
+category = "Travel & outdoors"
+line = "Travel guide"
+
+[[app]]
+name = "Zéphyr"
+category = "Travel & outdoors"
+line = "Outdoor conditions"
+
+[[app]]
+name = "BoxBox"
+category = "Travel & outdoors"
+line = "Motorsport companion"
