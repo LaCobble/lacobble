@@ -8,6 +8,8 @@ import json
 import os
 import sys
 
+import requests
+
 from fetch_github import fetch, summarize
 from render_apps import load as load_apps, render as render_apps
 from render_hero import render as render_hero
@@ -24,6 +26,19 @@ HEADINGS = {
 }
 
 
+def fetch_avatar(login: str) -> bytes | None:
+    """The public avatar, for the hero's ASCII portrait. A failed download
+    only drops the portrait - it shouldn't fail the whole daily run."""
+    try:
+        resp = requests.get(f"https://github.com/{login}.png?size=400",
+                            timeout=30)
+        resp.raise_for_status()
+        return resp.content
+    except requests.RequestException as e:
+        print(f"  avatar download failed, hero without portrait: {e}")
+        return None
+
+
 def main():
     login = sys.argv[1] if len(sys.argv) > 1 else "LaCobble"
 
@@ -36,7 +51,8 @@ def main():
         json.dump(data, f, indent=2)
 
     print("rendering data widgets...")
-    write_svg(os.path.join(ASSETS, "hero.svg"), render_hero())
+    write_svg(os.path.join(ASSETS, "hero.svg"),
+              render_hero(fetch_avatar(login)))
     write_svg(os.path.join(ASSETS, "langs.svg"), render_langs(data))
     write_svg(os.path.join(ASSETS, "apps.svg"), render_apps(load_apps(APPS)))
 

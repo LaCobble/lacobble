@@ -1,4 +1,4 @@
-<img src="./assets/hero.svg" width="620" alt="LaCobble, cybersecurity engineer"/>
+<img src="./assets/hero.svg" width="620" alt="LaCobble, cybersecurity engineer and CTF player"/>
 
 I also build native iOS apps (Swift, SwiftUI), designed for privacy from
 the start: on-device processing, no tracking, as little backend as

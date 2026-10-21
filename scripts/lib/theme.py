@@ -31,3 +31,9 @@ CARD_WIDTH = 620
 # Bar colors for langs.svg, ember fading into moss - the brand palette
 # rather than GitHub's per-language rainbow.
 LANG_COLORS = [EMBER, "#C9915C", "#A8977A", MOSS, "#5F7358", "#4F4840"]
+
+# ASCII portrait in the hero banner: brightness picks a character on the
+# ramp and a color, dark to light, so the avatar renders in the palette.
+PORTRAIT_RAMP = " .:-=+*#%@"
+PORTRAIT_COLORS = ["#1B1712", "#3A332A", "#4F4840", "#6B5E4D", "#8A7356",
+                   "#A9784A", "#C98143", EMBER, "#E9B98A", TEXT]
