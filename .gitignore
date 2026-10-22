@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# Local virtualenvs and OS files
+.venv/
+.DS_Store
