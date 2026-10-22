@@ -1,0 +1,56 @@
+# Checks every PR: valid data files, no secrets, and every SVG renders offline
+# (no GitHub token needed). The daily refresh itself lives in stats.yml.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Compile and validate data
+        run: |
+          python -m compileall -q scripts
+          python -c "import json, tomllib; json.load(open('assets/data.json')); tomllib.load(open('apps.toml', 'rb'))"
+
+      - name: Render every graphic offline
+        working-directory: scripts
+        run: |
+          python - <<'PY'
+          import json
+          from render_apps import load, render as apps
+          from render_heading import render as heading
+          from render_hero import render as hero
+          from render_langs import render as langs
+          for svg in (apps(load("../apps.toml")), heading("projects"),
+                      langs(json.load(open("../assets/data.json"))), hero(None)):
+              assert svg.lstrip().startswith("<"), "not an SVG"
+          print("all graphics render")
+          PY
+
+      - name: Secrets (gitleaks)
+        run: |
+          docker run --rm -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:v8.21.2 \
+            dir /repo --no-banner --redact

@@ -15,15 +15,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-graphics
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
 
       - name: install dependencies
         run: pip install -r scripts/requirements.txt
