@@ -1,8 +1,6 @@
 __pycache__/
 *.pyc
 
-# Local virtualenvs and tool settings
+# Local virtualenvs and OS files
 .venv/
-.claude/
-CLAUDE.md
 .DS_Store
