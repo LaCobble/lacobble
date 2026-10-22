@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: App support
+    url: https://support.lacobble.dev
+    about: A question about one of the apps? Use its support form.
+  - name: Contact
+    url: https://lacobble.dev
+    about: Anything else.
