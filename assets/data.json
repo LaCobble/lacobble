@@ -2,13 +2,13 @@
   "languages": [
     {
       "name": "Swift",
-      "share": 0.5845292363599266,
+      "share": 0.5866397608169516,
       "color": "#F05138",
       "repos": 42
     },
     {
       "name": "Python",
-      "share": 0.13865857751681487,
+      "share": 0.13831138673229024,
       "color": "#3572A5",
       "repos": 37
     },
@@ -20,19 +20,19 @@
     },
     {
       "name": "HTML",
-      "share": 0.05684606235898393,
+      "share": 0.05709688973998512,
       "color": "#e34c26",
       "repos": 19
     },
     {
       "name": "JavaScript",
-      "share": 0.05668835119706854,
+      "share": 0.05674306707991291,
       "color": "#f1e05a",
       "repos": 15
     },
     {
       "name": "TypeScript",
-      "share": 0.037275248620759475,
+      "share": 0.03534556446261327,
       "color": "#3178c6",
       "repos": 7
     }
