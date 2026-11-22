@@ -2,40 +2,40 @@
   "languages": [
     {
       "name": "Swift",
-      "share": 0.5984168771505279,
+      "share": 0.6060434947551313,
       "color": "#F05138",
-      "repos": 52
+      "repos": 54
     },
     {
       "name": "Python",
-      "share": 0.1620527176404732,
+      "share": 0.15954362348437753,
       "color": "#3572A5",
-      "repos": 46
+      "repos": 48
     },
     {
       "name": "JavaScript",
-      "share": 0.05322027549907587,
+      "share": 0.051972658962576176,
       "color": "#f1e05a",
       "repos": 19
     },
     {
       "name": "Java",
-      "share": 0.04878048780487805,
+      "share": 0.047619047619047616,
       "color": "#b07219",
       "repos": 4
     },
     {
       "name": "HTML",
-      "share": 0.047089419652831414,
+      "share": 0.04596420139626393,
       "color": "#e34c26",
       "repos": 20
     },
     {
       "name": "TypeScript",
-      "share": 0.03255216282857487,
+      "share": 0.03219151474709347,
       "color": "#3178c6",
       "repos": 8
     }
   ],
-  "repo_count": 82
+  "repo_count": 84
 }
